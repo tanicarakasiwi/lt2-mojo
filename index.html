@@ -11,24 +11,34 @@
 <body class="bg-slate-50 text-slate-800 font-sans">
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-amber-700 text-white shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <header class="sticky top-0 z-50 bg-amber-800 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-2.5 flex justify-between items-center">
+            <!-- Brand Logo & Title -->
             <div class="flex items-center space-x-3">
-                <i class="fa-solid fa-campground text-2xl text-amber-300"></i>
-                <span class="font-bold text-lg tracking-wide">LT-II KWARRAN MOJO 2026</span>
+                <img src="logo-lt2.png" alt="Logo LT2 Kwarran Mojo 2026" class="h-10 w-auto object-contain">
+                <span class="font-bold text-base md:text-lg tracking-wide">LT-II KWARRAN MOJO 2026</span>
             </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="#info" class="hover:text-amber-200 transition">Informasi</a>
-                <a href="#panduan" class="hover:text-amber-200 transition">Panduan Juknis</a>
-                <a href="#jadwal" class="hover:text-amber-200 transition">Jadwal</a>
-                <a href="#pendaftaran" class="hover:text-amber-200 transition">Pendaftaran</a>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="#info" class="hover:text-amber-200 transition py-1">Informasi</a>
+                <a href="#panduan" class="hover:text-amber-200 transition py-1">Panduan Juknis</a>
+                <a href="#jadwal" class="hover:text-amber-200 transition py-1">Jadwal</a>
+                
+                <!-- Highlighted Pendaftaran Button -->
+                <a href="#pendaftaran" class="bg-amber-400 hover:bg-amber-300 text-amber-950 font-bold px-4 py-1.5 rounded-full shadow-sm hover:shadow transition transform hover:-translate-y-0.5">
+                    Pendaftaran
+                </a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-amber-700 to-amber-900 text-white py-16 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
+    <section class="bg-gradient-to-b from-amber-800 to-amber-950 text-white py-14 px-4 text-center">
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
+            <!-- Logo Besar di Hero Section -->
+            <img src="logo-lt2.png" alt="Logo LT2 Kwarran Mojo 2026" class="h-28 md:h-36 w-auto mb-6 drop-shadow-lg">
+
             <span class="bg-amber-500/30 text-amber-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
                 Motto: Satyaku Kudharmakan Dharmaku Kubaktikan
             </span>
@@ -38,7 +48,7 @@
             <p class="text-amber-200 text-base md:text-lg italic font-medium mb-6">
                 “Berani Beraksi, Cerdas Berkreasi, Tangguh Berprestasi”
             </p>
-            <div class="bg-amber-950/40 inline-block px-4 py-2 rounded-lg border border-amber-600/40 mb-8 text-sm text-amber-100">
+            <div class="bg-amber-950/50 inline-block px-4 py-2 rounded-lg border border-amber-600/40 mb-8 text-sm text-amber-100">
                 <i class="fa-solid fa-location-dot mr-1 text-amber-400"></i> Tempat: Yayasan Al-Hisyamy Kranding
             </div>
             <div>
@@ -51,7 +61,7 @@
 
     <!-- Informasi Lomba -->
     <section id="info" class="py-12 max-w-6xl mx-auto px-4">
-        <h2 class="text-2xl font-bold text-center mb-8 border-b-2 border-amber-500 pb-2 inline-block">
+        <h2 class="text-2xl font-bold text-center mb-8 border-b-2 border-amber-600 pb-2 inline-block">
             Bentuk Kegiatan Perlombaan
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -128,14 +138,14 @@
     </section>
 
     <!-- Pendaftaran (Google Form Link / Embed) -->
-    <section id="pendaftaran" class="py-12 bg-amber-900 text-white text-center">
+    <section id="pendaftaran" class="py-12 bg-amber-950 text-white text-center">
         <div class="max-w-2xl mx-auto px-4">
             <h2 class="text-2xl font-bold mb-2">Pendaftaran Online</h2>
             <p class="text-amber-200 text-sm mb-6">
                 Pendaftaran dibuka mulai <strong>22 Agustus 2026 s.d. 2 September 2026</strong>. Silakan isi formulir pendaftaran melalui Google Form resmi di bawah ini.
             </p>
             
-            <div class="bg-amber-950/50 p-8 rounded-xl border border-amber-700/50 shadow-lg">
+            <div class="bg-amber-900/40 p-8 rounded-xl border border-amber-700/50 shadow-lg">
                 <i class="fa-solid fa-file-pen text-4xl text-amber-300 mb-4"></i>
                 <h3 class="font-bold text-xl mb-2">Formulir Pendaftaran LT-II 2026</h3>
                 <p class="text-xs text-amber-200 mb-6">Klik tombol di bawah untuk membuka formulir pendaftaran Google Form.</p>
