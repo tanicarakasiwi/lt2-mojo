@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LT-II Kwarran Mojo 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pramukaCoklatTua: '#4b2e1e',
+                        pramukaCoklatMuda: '#d7a15c',
+                        pramukaKhaki: '#f4ede4',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-amber-100">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="w-9 h-9 rounded-full bg-amber-800 text-amber-100 flex items-center justify-center font-bold text-lg">⚜</span>
+                <div>
+                    <p class="font-bold text-slate-900 leading-tight">LT-II MOJO 2026</p>
+                    <p class="text-xs text-slate-500">Kwarran Mojo, Kab. Kediri</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#beranda" class="hover:text-amber-800 transition">Beranda</a>
+                <a href="#info-lomba" class="hover:text-amber-800 transition">Mata Lomba</a>
+                <a href="#jadwal" class="hover:text-amber-800 transition">Jadwal</a>
+                <a href="#panduan" class="hover:text-amber-800 transition">Petunjuk Teknis</a>
+                <a href="#pendaftaran" class="bg-amber-800 text-white px-4 py-2 rounded-lg hover:bg-amber-900 transition">Daftar Regu</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-slate-700 text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-4 py-3 space-y-2 text-sm font-semibold text-slate-700">
+            <a href="#beranda" class="block py-1 hover:text-amber-800">Beranda</a>
+            <a href="#info-lomba" class="block py-1 hover:text-amber-800">Mata Lomba</a>
+            <a href="#jadwal" class="block py-1 hover:text-amber-800">Jadwal</a>
+            <a href="#panduan" class="block py-1 hover:text-amber-800">Petunjuk Teknis</a>
+            <a href="#pendaftaran" class="block py-2 text-amber-800 font-bold">Daftar Regu</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative bg-gradient-to-b from-amber-900 to-stone-900 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <span class="inline-block bg-amber-500/20 text-amber-300 text-xs md:text-sm px-4 py-1.5 rounded-full border border-amber-400/30 font-medium">
+                Kwartir Ranting Gerakan Pramuka Mojo
+            </span>
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight text-amber-100">
+                LOMBA TINGKAT II (LT-II) TAHUN 2026
+            </h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-sm md:text-base">
+                Ajang prestasi, kreativitas, dan persaudaraan Pramuka Penggalang se-Kecamatan Mojo menuju LT-III Kwarcab Kediri.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#panduan" class="bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition shadow">
+                    <i class="fa-solid fa-book-open mr-2 text-amber-800"></i> Baca Petunjuk Teknis
+                </a>
+                <a href="#pendaftaran" class="bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition shadow">
+                    <i class="fa-solid fa-user-plus mr-2"></i> Formulir Pendaftaran
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO MATA LOMBA -->
+    <section id="info-lomba" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Kategori & Mata Lomba</h2>
+            <p class="text-slate-600 text-sm mt-1">Kompetisi terbagi dalam rumpun keterampilan kepramukaan dan umum</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-campground"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">Pioneering & Tapak Perkemahan</h3>
+                <p class="text-xs text-slate-600">Ketepatan simpul, ikatan, kekuatan rancang bangun, dan kerapian tenda regu.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">Jelajah & Navigasi</h3>
+                <p class="text-xs text-slate-600">Menaksir, peta-pita, kompas, semboyan morse, semaphore, dan sandi jejak.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-person-military-pointing"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">PBB & Formasi Tongkat</h3>
+                <p class="text-xs text-slate-600">Kekompakan baris berbaris dasar, variasi formasi, dan ketegasan aba-aba pemimpin regu.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-kit-medical"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">PPGD / Pertolongan Pertama</h3>
+                <p class="text-xs text-slate-600">Penanganan darurat kecelakaan lapangan dan teknik tandu darurat darat.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-masks-theater"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">Pentas Seni & Budaya</h3>
+                <p class="text-xs text-slate-600">Kreativitas seni tradisi lokal Kediri dan lagu kepanduan pada panggung api unggun.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">Teknologi Tepat Guna (TTG)</h3>
+                <p class="text-xs text-slate-600">Inovasi karya sederhana ramah lingkungan untuk kebutuhan perkemahan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JADWAL KEGIATAN -->
+    <section id="jadwal" class="py-16 px-4 bg-amber-50/50 border-y border-amber-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Agenda & Alur Pelaksanaan</h2>
+                <p class="text-slate-600 text-sm mt-1">Tahapan persiapan hingga pelaksanaan kegiatan LT-II</p>
+            </div>
+
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-amber-800 text-white text-xs uppercase tracking-wider">
+                        <tr>
+                            <th class="py-3.5 px-4">Agenda / Tahap</th>
+                            <th class="py-3.5 px-4">Waktu Pelaksanaan</th>
+                            <th class="py-3.5 px-4">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700">
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold">Pendaftaran Online</td>
+                            <td class="py-3 px-4">1 - 15 September 2026</td>
+                            <td class="py-3 px-4 text-xs">Formulir pangkalan & biodata regu</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold">Technical Meeting (TM)</td>
+                            <td class="py-3 px-4">18 September 2026 (09:00 WIB)</td>
+                            <td class="py-3 px-4 text-xs">Sanggar Kwarran Mojo</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold">Check-in & Pendirian Tenda</td>
+                            <td class="py-3 px-4">25 September 2026 (07:00 WIB)</td>
+                            <td class="py-3 px-4 text-xs">Bumi Perkemahan</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold">Pelaksanaan LT-II</td>
+                            <td class="py-3 px-4">25 - 27 September 2026</td>
+                            <td class="py-3 px-4 text-xs">Perkemahan 3 Hari 2 Malam</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANDUAN / JUKNIS (EMBED GOOGLE DOCS) -->
+    <section id="panduan" class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Petunjuk Pelaksanaan & Teknis (Juklak/Juknis)</h2>
+            <p class="text-slate-600 text-sm mt-1">Dokumen resmi aturan penilaian dan ketentuan umum LT-II Mojo 2026</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-3 md:p-6 space-y-4">
+            <div class="flex items-center justify-between flex-wrap gap-2 px-2">
+                <span class="text-xs text-slate-500 font-medium">
+                    <i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> Mode Baca Online Dokumen Terverifikasi
+                </span>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vTxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/pub" target="_blank" class="text-xs text-amber-800 font-bold hover:underline">
+                    Buka di Tab Baru <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+            </div>
+
+            <!-- EMBED IFRAME GOOGLE DOCS -->
+            <div class="relative w-full overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-inner" style="height: 650px;">
+                <!-- 
+                  CARA GANTI LINK: 
+                  Di Google Docs: File -> Bagikan (Share) -> Publikasikan ke web (Publish to web) -> Tab 'Sematkan' (Embed) -> Salin URL di src iframe
+                -->
+                <iframe 
+                    src="https://docs.google.com/document/d/e/2PACX-1vQxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/pub?embedded=true" 
+                    class="w-full h-full border-0"
+                    loading="lazy">
+                    Memuat dokumen petunjuk teknis...
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENDAFTARAN -->
+    <section id="pendaftaran" class="py-16 px-4 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h2 class="text-2xl md:text-4xl font-bold text-amber-400">Pendaftaran Kontingen Regu</h2>
+            <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto">
+                Pastikan berkas mandat Gugus Depan, biodata peserta, dan surat izin orang tua sudah lengkap sebelum mengisi formulir.
+            </p>
+
+            <div class="bg-slate-800/70 border border-slate-700 p-8 rounded-2xl max-w-lg mx-auto text-left space-y-4 shadow-xl">
+                <div class="flex items-start space-x-3 text-sm text-slate-300">
+                    <i class="fa-solid fa-circle-check text-amber-400 mt-1"></i>
+                    <span>Tiap Regu terdiri dari 8 Pramuka Penggalang inti.</span>
+                </div>
+                <div class="flex items-start space-x-3 text-sm text-slate-300">
+                    <i class="fa-solid fa-circle-check text-amber-400 mt-1"></i>
+                    <span>Didampingi 1 Pembina Pendamping (Bindamping).</span>
+                </div>
+                
+                <!-- Ganti link href dengan URL Google Form Pendaftaran -->
+                <a href="https://forms.gle/CONTOH_LINK_GOOGLE_FORM" target="_blank" class="block w-full text-center bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3.5 px-6 rounded-xl transition shadow-lg mt-6">
+                    Buka Google Form Pendaftaran <i class="fa-solid fa-external-link ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-950 text-slate-400 text-xs py-8 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div>
+                <p class="font-bold text-white text-sm">Gerakan Pramuka Kwartir Ranting Mojo</p>
+                <p class="mt-0.5">Sekretariat: Sanggar Pramuka Kwarran Mojo, Kabupaten Kediri</p>
+            </div>
+            <p>&copy; 2026 Panitia Pelaksana LT-II Mojo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
